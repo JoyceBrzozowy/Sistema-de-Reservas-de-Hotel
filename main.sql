@@ -278,6 +278,18 @@ CREATE TABLE ReservasEventos (
     FOREIGN KEY (HospedeID) REFERENCES Hospedes(HospedeID)
 );
 
+--Identificando as reservas duplicadas
+SELECT QuartoID, HospedeID, DataCheckIn, DataCheckOut, COUNT(*) AS Contagem
+FROM Reservas
+GROUP BY QuartoID, HospedeID, DataCheckIn, DataCheckOut
+HAVING COUNT(*) > 1;
+
+-- Exclua as reservas duplicadas, mantendo a reserva com o menor valor de ReservaID
+WITH Duplicatas AS (
+    SELECT ReservaID, ROW_NUMBER() OVER(PARTITION BY QuartoID, HospedeID, DataCheckIn, DataCheckOut ORDER BY ReservaID) AS RN
+    FROM Reservas
+)
+DELETE FROM Duplicatas WHERE RN > 1;
 
 
 
