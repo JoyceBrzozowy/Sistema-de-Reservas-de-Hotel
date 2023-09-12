@@ -284,7 +284,7 @@ FROM Reservas
 GROUP BY QuartoID, HospedeID, DataCheckIn, DataCheckOut
 HAVING COUNT(*) > 1;
 
--- Exclua as reservas duplicadas, mantendo a reserva com o menor valor de ReservaID
+-- Excluindo as reservas duplicadas, mantendo a reserva com o menor valor de ReservaID
 WITH Duplicatas AS (
     SELECT ReservaID, ROW_NUMBER() OVER(PARTITION BY QuartoID, HospedeID, DataCheckIn, DataCheckOut ORDER BY ReservaID) AS RN
     FROM Reservas
