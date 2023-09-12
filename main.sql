@@ -292,4 +292,17 @@ WITH Duplicatas AS (
 DELETE FROM Duplicatas WHERE RN > 1;
 
 
+--Recupera informações detalhadas sobre as reservas, incluindo os detalhes do quarto e do hóspede associados a cada reserva.
+SELECT 
+    R.ReservaID,
+    Q.NumeroQuarto,
+    Q.TipoQuarto,
+    H.Nome AS NomeHospede,
+    R.DataCheckIn,
+    R.DataCheckOut
+FROM Reservas AS R
+INNER JOIN QuartosHotel AS Q ON R.QuartoID = Q.QuartoID
+INNER JOIN Hospedes AS H ON R.HospedeID = H.HospedeID;
+
+
 
