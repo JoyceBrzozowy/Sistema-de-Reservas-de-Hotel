@@ -50,15 +50,15 @@ CREATE TABLE Usuarios (
 );
 
 
-
 -- Criação da tabela de Perfis de Usuário
 CREATE TABLE PerfisUsuario (
-    PerfilID INT PRIMARY KEY AUTO_INCREMENT,
+    PerfilID INT PRIMARY KEY IDENTITY(1,1),
     UsuarioID INT,
     NomePerfil VARCHAR(50),
     Descrição TEXT,
     FOREIGN KEY (UsuarioID) REFERENCES Usuarios(UsuarioID)
 );
+
 
 ---Pagamentos Online:
 
