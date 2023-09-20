@@ -25,7 +25,7 @@ VALUES ('Novo Hóspede', 'novo@email.com', '+1234567890', '2000-01-01');
 
 CREATE DATABASE HotelDB;
 
--- Modifica o nome do banco de dados - pode variar dependendo do 
+-- Modifica o nome do banco de dados - pode variar dependendo do banco
 
 ALTER DATABASE HotelDB
 MODIFY NAME = NovoHotelDB;
