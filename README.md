@@ -4,6 +4,9 @@
 
 ### O objetivo deste sistema é gerenciar e facilitar a reserva de quartos de hotel e outros serviços relacionados. Ele desempenha um papel crucial na operação eficiente de hotéis e estabelecimentos de hospedagem.
 
+
+A seguir veremos as tabelas, procedures e consultas criadas e suas descrições: 
+
 #### ▪️ Tabela QuartosHotel: 
 Armazena informações sobre os quartos do hotel, como número do quarto, tipo de quarto, capacidade, preço da diária e status de ocupação.
 
