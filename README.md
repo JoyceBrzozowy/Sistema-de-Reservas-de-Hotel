@@ -2,7 +2,7 @@
 
 ![image](https://github.com/JoyceBrzozowy/Sistema-de-Reservas-de-Hotel/assets/96213619/31e84289-8cd5-499e-86c6-7f394a24fcc9)
 
-### O objetivo deste sistema é gerenciar e facilitar a reserva de quartos de hotel e outros serviços relacionados. Ele desempenha um papel crucial na operação eficiente de hotéis e estabelecimentos de hospedagem.
+O objetivo deste sistema é gerenciar e facilitar a reserva de quartos de hotel e outros serviços relacionados. Ele desempenha um papel crucial na operação eficiente de hotéis e estabelecimentos de hospedagem.
 
 
 A seguir veremos as tabelas, procedures e consultas criadas e suas descrições: 
