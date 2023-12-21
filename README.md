@@ -32,20 +32,20 @@ Utilizada para gerenciar serviços adicionais oferecidos pelo hotel, como servi�
 #### ➡️ Tabela ItensConsumiveis: 
 Mantém um registro de itens consumíveis, como alimentos e bebidas, que podem ser oferecidos aos hóspedes.
 
-#### ◽ Stored Procedure CriarReserva: 
+#### ➡️ Stored Procedure CriarReserva: 
 Uma procedure que cria uma nova reserva de quarto após verificar a disponibilidade do quarto para as datas especificadas. Atualiza o status de ocupação do quarto.
 
-#### ◽ Stored Procedure AtualizarReserva: 
+#### ➡️ Stored Procedure AtualizarReserva: 
 Atualiza as datas de check-in e check-out de uma reserva existente com base no ID da reserva.
 
-#### ◽ Stored Procedure ExcluirReserva:
+#### ➡️ Stored Procedure ExcluirReserva:
 Exclui uma reserva com base no ID da reserva.
 
-#### ◽ Consulta para Identificar Reservas Duplicadas:
+#### ➡️ Consulta para Identificar Reservas Duplicadas:
 Identifica as reservas duplicadas com base no quarto, hóspede e datas de check-in e check-out.
 
-#### ◽ Consulta para Excluir Reservas Duplicadas: 
+#### ➡️ Consulta para Excluir Reservas Duplicadas: 
 Exclui as reservas duplicadas mantendo apenas a reserva com o menor valor de ReservaID.
 
-#### ◽ Consulta com JOIN: 
+#### ➡️ Consulta com JOIN: 
 Recupera informações detalhadas sobre as reservas, incluindo os detalhes do quarto e do hóspede associados a cada reserva, usando JOIN nas tabelas Reservas, QuartosHotel e Hospedes.
